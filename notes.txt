@@ -1,0 +1,4 @@
+React Notes:
+-> no closing tag me backslash lgana, eg. <img src="" />.
+->JSX me expression vs statement pass krne ka difference.
+->map function me key add krna.
