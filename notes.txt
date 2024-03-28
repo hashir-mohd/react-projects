@@ -1,4 +1,9 @@
 React Notes:
 -> no closing tag me backslash lgana, eg. <img src="" />.
-->JSX me expression vs statement pass krne ka difference.
+->JSX me expression vs statement pass krne ka difference.only expression work.
 ->map function me key add krna.
+
+dev-dependendies : do not go in production, work only when you create the project.
+if we have react scripts in package.json then we dont need to add js file in html using script tag. it automatically do it.
+
+-> <> </> : the content inside it is read as html, so if you have made a functio or object or constant previously then put them inside {} to show them on the webpage
