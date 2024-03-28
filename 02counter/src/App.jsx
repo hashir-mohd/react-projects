@@ -7,12 +7,17 @@ function App() {
   let [counter,setCounter] = useState(10);
 
   function addValue(){
-    counter=counter+1;
-    setCounter(counter);
+    if (counter <20){
+      setCounter(counter +1);
+    }
+    else{
+      setCounter(counter)
+    }
   };
 
   const decreaseValue = ()=>{
-    setCounter(counter-1);
+    if(counter>0){setCounter(counter-1)}
+    else{setCounter(counter)}
   }
 
   return (
