@@ -1,0 +1,30 @@
+# Use official Node.js image as base
+FROM node:alpine as builder
+
+# Set working directory in the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json to container
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the React project
+RUN npm run build
+
+# Use nginx as the server
+FROM nginx:alpine
+
+# Copy build folder from previous stage to nginx server directory
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Command to run nginx server
+CMD ["nginx", "-g", "daemon off;"]
+
