@@ -12,5 +12,8 @@ if we have react scripts in package.json then we dont need to add js file in htm
     setCounter(counter+1)
     setCounter(counter+1)
     output and what to do if we want to increase it one by one(we use callback)
+    setcounter((prev)=>{ prev+1}) #we use this to toggle button
 
 -><button style={{backgroundColor:"yellow"}} onClick={() =>setColor("yellow")}>Yellow</button>: onclick expect a function as a parameter, therefore we cannot do onclick= setColor("yellow"), this give returned value of a functino as a parameter to onclick.
+
+-> onclick, onchange etc function me jb function pass kro to () ye nhi lgaye jate.
