@@ -17,3 +17,10 @@ if we have react scripts in package.json then we dont need to add js file in htm
 -><button style={{backgroundColor:"yellow"}} onClick={() =>setColor("yellow")}>Yellow</button>: onclick expect a function as a parameter, therefore we cannot do onclick= setColor("yellow"), this give returned value of a functino as a parameter to onclick.
 
 -> onclick, onchange etc function me jb function pass kro to () ye nhi lgaye jate.
+
+-> difference between link, a, navlink. why we do not use a tag in react, bcz it refreshes the whole page.
+
+->to create nested link in react router
+<Route path='about' element={<About />}>
+    <Route path='/abc' element={<About />} />
+</Route>
