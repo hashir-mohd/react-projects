@@ -24,3 +24,4 @@ if we have react scripts in package.json then we dont need to add js file in htm
 <Route path='about' element={<About />}>
     <Route path='/abc' element={<About />} />
 </Route>
+
