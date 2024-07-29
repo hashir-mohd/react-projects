@@ -25,3 +25,5 @@ if we have react scripts in package.json then we dont need to add js file in htm
     <Route path='/abc' element={<About />} />
 </Route>
 
+->difference between function() and function{} and return() and return {}
+->capital name of function in jsx file and user jsx not js.
