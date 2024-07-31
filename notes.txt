@@ -37,3 +37,5 @@ onchange{(e)=>oncurrencychange && oncurrencychange(e.target.value)}
         e.preventdefault;
         then add your functinos
     }}
+
+-> whenever chages are made in .env file, restart the server
