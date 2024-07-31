@@ -9,6 +9,7 @@ export const todoSlice = createSlice({
     initialState,
     reducers:{
         addTodo: (state,action) =>{
+            console.log(action);
             const todo = {
                 id: nanoid(),
                 text: action.payload,
@@ -16,6 +17,7 @@ export const todoSlice = createSlice({
             state.todos.push(todo)
         },
         removeTodo:(state,action) =>{
+            console.log(action.payload);
             state.todos = state.todos.filter((todo)=> todo.id !== action.payload)
         },
         updateTodo:(state,action) =>{
